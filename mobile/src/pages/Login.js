@@ -1,7 +1,23 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
+
+import logo from '../assets/logo.png';
 
 export default function Login() {
 
-    return <View />
+  return ( 
+    <View style={styles.container}>
+        <Text>ronaldo</Text>
+        <Image source={logo}/>
+    </View>
+  );
 }
+
+const styles = StyleSheet.create({
+
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    }
+});
